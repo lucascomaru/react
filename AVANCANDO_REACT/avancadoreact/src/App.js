@@ -12,6 +12,7 @@ import ExecuteFunction from './components/ExecuteFunction';
 import { useState } from 'react';
 import Message from './components/Message';
 import ChangeMessageState from './components/ChangeMessageState';
+import UserDetails from './components/UserDetails';
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
       <ExecuteFunction myFunction={showMessage} />
       <Message msg={message} />
       <ChangeMessageState handleMessage={handleMessage}/>
+      <UserDetails />
     </div>
   );
 }
